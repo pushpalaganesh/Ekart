@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Homepage</title>
+    {%include 'cdnlines.html'%}
+</head>
+<body>
+    <h1 class='text-center'>Welcome to NTH-students information</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="{% url 'add_student' %}" class="btn btn-success">Add new student</a>
+                <table class="table table-bordered text-center">
+                <thead>
+                <tr>
+                    <th>First Name:</th>
+                    <th>Last Name:</th>
+                    <th>course:</th>
+                    <th>Fee:</th>
+                    <th>assignment1:</th>
+                    <th>assignment2:</th>
+                    <th>assignment3:</th>
+                    <th>assignment4:</th>
+                    <th>institute:</th>
+                    <th>location:</th>
+                    <th>action:</th>
+                </tr>
+                {%for i in student %}
+                <tr>
+                    <td>{{i.first_name}}</td>
+                    <td>{{i.last_name}}</td>
+                    <td>{{i.course}}</td>
+                    <td>{{i.fee}}</td>
+                    <td>{{i.assignment1}}</td>
+                    <td>{{i.assignment2}}</td>
+                    <td>{{i.assignment3}}</td>
+                    <td>{{i.assignment4}}</td>
+                    <td>{{i.institute}}</td>
+                    <td>{{i.location}}</td>
+                    <td>
+                    <a href="{% url 'update_student' i.id %}" class="btn btn-sm btn-outline-success">Update</a>
+                    <a href="{% url 'delete_student' i.id %}" class="btn btn-sm btn-outline-danger">Delete</a>
+                </td>
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+</body>
+</html>

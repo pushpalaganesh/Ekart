@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>add_student</title>
+    {% include 'cdnlines.html' %}
+</head>
+<style media="screen">
+  input[name]{margin-top:40px;}
+</style>
+<body>
+    <div class='container'>
+        <h3 class="text-center">Please Enter Student data Here</h3>
+        <div class='row'>
+            <div class='offset-md-3 col-md-6'>
+                <form method="POST" class="shadow-lg">
+                    {%csrf_token%}
+                    <input type="text" name="fname" class="form-control" placeholder="First Name" value="{{student.first_name}}">
+                    <input type="text" name="lname" class="form-control" placeholder="Last Name" value="{{student.last_name}}">
+                    <input type="text" name="course" class="form-control" placeholder="course" value="{{student.course}}">
+                    <input type="text" name="fee" class="form-control" placeholder="fee" value="{{student.fee}}">
+                    <input type="text" name="ass1" class="form-control" placeholder="assignment1" value="{{student.assignment1}}">
+                    <input type="text" name="ass2" class="form-control" placeholder="assignment2" value="{{student.assignment2}}">
+                    <input type="text" name="ass3" class="form-control" placeholder="assignment3" value="{{student.assignment3}}">
+                    <input type="text" name="ass4" class="form-control" placeholder="assignment4" value="{{student.assignment4}}">
+                    <input type="text" name="institute" class="form-control" placeholder="institute" value="{{student.institute}}">
+                    <input type="text" name="location" class="form-control" placeholder="location" value="{{student.location}}">
+                    <center>
+                        <input type="submit" value="update" class="btn btn-outline-success">
+                        <input type="reset" value="clear" class="btn btn-outline-danger"> <br>
+                        <a href="{% url 'homepage' %}" class="btn btn-outline-primary mt-2">Goto Main page</a>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
