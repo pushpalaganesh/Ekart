@@ -35,5 +35,5 @@ cmd5: **pip install mysqlclient**=> this command is used to install mysqlclient 
 cmd6: **pip install pillow** => this command used for installind pillow library in python. Pillow library used for tasks such as processing user-uploaded images, generating thumbnails, and dynamically creating image-based content. 
 cmd7: **pip freeze** => Used to generate a list of all installed packages in the current environment along with their versions. 
 cmd8: **django-admin startproject projectname** (eg: **django-admin startproject project11**) used to create a project 
-cmd9: **django-admin startapp appname** (eg: **django-admin startapp Ekart**) used to create app 
+cmd9: **django-admin startapp appname** (eg: **django-admin startapp app11**) used to create app 
 cmd10: **py manage.py runserver** => used to run server. then we have seen a http url on command prompt ("**http://127.0.0.1:8000/**"). we have to copy and paste it on web browser like chrome,Microsoft Edge,..etc.
