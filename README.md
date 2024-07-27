@@ -38,12 +38,12 @@ cmd8: **django-admin startproject projectname** (eg: **django-admin startproject
 cmd9: **django-admin startapp appname** (eg: **django-admin startapp app11**) used to create app 
 cmd10: **py manage.py runserver** => used to run server. then we have seen a http url on command prompt ("**http://127.0.0.1:8000/**"). we have to copy and paste it on web browser like chrome,Microsoft Edge,..etc.
 
-# admin.py
+# admin page
 to access admin page by http://127.0.0.1:8000/admin 
 ![Screenshot 2024-07-27 184234](https://github.com/user-attachments/assets/5802794e-ff99-4ba9-9bac-430ecd31a195)
-#registration page
+# registration page
 ![Screenshot 2024-07-27 184118](https://github.com/user-attachments/assets/7dd2241c-e892-4f1f-943d-dcdec668a597)
-#login page
+# login page
 ![Screenshot 2024-07-27 184137](https://github.com/user-attachments/assets/adfdc87b-144f-4a46-9a61-0cbb5b560637)
 # Home page
 ![Screenshot 2024-07-27 184636](https://github.com/user-attachments/assets/31fc8b2b-299f-45e7-9f3f-8ea989d6967b)
