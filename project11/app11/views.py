@@ -186,7 +186,7 @@ def makepayment(request):
     for x in orders:
         s=s+x.pid.pcost*x.qty
         oid=x.order_id
-    client=razorpay.Client(auth=('rzp_test_vLtV29Y2KWSgp8','e58AdGZerPOdzM7TYm0o429e'))
+    client=razorpay.Client(auth=('#Your key_id','Your key_secret'))
     data={'amount':s*100,'currency':'INR','receipt': oid}
     payment=client.order.create(data=data)
     context={}
