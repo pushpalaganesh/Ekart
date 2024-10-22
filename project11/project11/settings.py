@@ -29,8 +29,8 @@ ALLOWED_HOSTS = []
 
 #Email settings
 EMAIL_HOST="smtp.gmail.com"
-EMAIL_HOST_USER="pushpalaganesh@gmail.com"
-EMAIL_HOST_PASSWORD="xgbk cngo gxaf xobq"
+EMAIL_HOST_USER="#Your Email Address"
+EMAIL_HOST_PASSWORD="#Email Password"
 EMAIL_HOST_PORT=587
 EMAIL_USE_TLS=True
 EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'project11.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'ganesh',
+        'NAME':'#DB name',
         'HOST':'localhost',
         'USER':'root',
         'PORT':'3306',
-        'PASSWORD':'root',
+        'PASSWORD':'#Your Password',
     }
 }
 
